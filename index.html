@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./assets/css/quiz.css">
+    <title>Javascript Code Quiz</title>
+  </head>
+
+  <body>
+    <div id="controls">
+      <div id="info">
+        <button id="scores" href="">High Scores</button>
+        <div id="timer">
+          <p>Time: <span id="time">0</span></p>
+        </div>
+      </div>
+    </div>
+
+    <div id="quizMain">
+      <section id="intro">
+        <h1>Javascript Countdown Quiz</h1>
+        <p>
+          Answer the JavaScript questions as fast as you can! Lose 5
+          seconds for every wrong answer.
+        </p>
+
+        <button>Begin!</button>
+      </section>
+
+      <section id="quizSpace" class="hidden">
+        <p id="title"></p>
+        <button></button>
+        <button></button>
+        <button></button>
+        <button></button>
+        <div id="scoreAlt" class="invis">
+          <p>&nbsp;</p>
+        </div>
+      </section>
+
+      <section id="fin" class="hidden">
+        <h1>Fin!</h1>
+        <p>Final score:&nbsp;<span id="score"></span></p>
+        <div id="rec">
+          <p>Initials:</p>
+          <input id="initials" type="text" /> <button>Begin!</button>
+        </div>
+        <div id="errorAlt" class="invis">
+          <p>&nbsp;</p>
+        </div>
+      </section>
+
+      <section id="highS" class="hidden">
+        <h1>High Scores</h1>
+        <div></div>
+        <button id="reset">Return</button>
+        <button id="clearScores">Clear High Scores</button>
+      </section>
+    </div>
+
+    <script src="assets/js/quiz.js"></script>
+    <script src="assets/js/quizq.js"></script>
+  </body>
+</html>
